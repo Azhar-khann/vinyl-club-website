@@ -1,0 +1,704 @@
+body{
+    margin:0;
+    font-family: 'Roboto Condensed';
+}
+
+html{
+    font-size: 10px;
+
+}
+
+
+/* header start */
+
+header{
+    display:flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header ul{
+    width:37%; 
+}
+
+header li{
+    display: inline-block;
+    font-size: 2rem;
+    padding-left: 10%;
+    
+}
+
+header a{
+    color: rgb(50, 48, 48);
+    text-decoration: none;
+}
+
+header .join_button{
+    border:1px solid orange;
+    border-radius: 5px;
+    padding:17px;
+}
+
+header span{
+    font-size:2rem;
+    color: orange;
+}
+
+.join_button_mobile{
+    display: none;
+}
+
+@media only screen and (max-width:767px) {
+
+    .join_button_mobile{
+        display: block;
+        border: 1px solid orange;
+        border-radius: 2px;
+        padding: 0.4% 3.5%;
+        margin-left: 2%;
+
+    }
+
+    .join_button{
+        display: none;
+    }
+
+    .logo_img{
+        display: none;
+    }
+    header{
+        margin-top: 10px;
+        justify-content:left;
+    }
+
+    header li{
+        font-size: 18px;
+        padding-left: 3%;
+        padding-right: 5%;
+    }
+
+    header ul{
+        padding-left: 3%;
+        width:75%;
+        margin-right: 0%;
+    }
+
+    header span{
+        font-size:22px;
+    }
+
+
+}
+
+/* header end */
+
+
+
+
+/* cover start */
+
+.cover{
+    background-image: url("../images/cover.png");
+    display: flex;
+    height:590px;
+    margin-top: 25px;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+}
+
+.cover .text{
+    position: relative;
+    left:15%;
+    width:30%;
+}
+
+.cover .button{
+    position: relative;
+    left: 15%;
+    width:10%;
+}
+.cover h1{
+    font-size: 4rem;
+    color: black;
+    font-weight: lighter;
+
+}
+
+.cover h5{
+    font-size: 1.8rem;
+    color: rgb(90, 88, 88);
+    font-weight: lighter;
+}
+
+.cover .button{
+    border-radius: 5px;
+    padding:1% 1%;
+    background-color: rgb(255, 184, 53);
+    
+}
+
+.cover h4{
+    margin: 0;
+    font-size:22px;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width:767px) {
+
+    .cover{
+        background-position-x: center;
+        height:450px;
+    }
+
+    .cover .text{
+        width:50%;
+        top:1%;
+    }
+
+    .cover h1{
+        font-size: 25px;
+        color:black;
+    }
+
+    .cover h5{
+        font-size: 12px;
+    }
+
+    .cover .button{
+        padding:1% 4%;
+        border-radius: 2px;
+    }
+
+    .cover h4{
+        font-size: 15px;
+    }
+
+}
+
+/* cover end */
+
+
+
+/* description "expand you record" */
+
+.description{
+    margin-top: 130px;
+}
+
+.description h1,
+.description h3{
+    text-align: center;
+}
+
+.description h1{
+    font-size: 3rem;
+    color: rgb(26, 25, 25);
+    font-weight: lighter;
+}
+
+.description h3{
+    font-size: 2rem;
+    color: rgb(122, 120, 120);
+    margin: auto;
+    width:45%;
+    line-height: 1.55;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+@media only screen and (max-width:767px) {
+
+    .description{
+        margin-top: 100px;
+    }
+
+    .description h1{
+        font-size: 30px;
+    }
+
+    .description h3{
+        font-size: 18px;
+    }
+
+}
+
+/* description end */
+
+
+
+
+/* how it works start */
+
+.how_it_works {
+    margin-top: 140px;
+    background-color: rgb(233, 238, 244);
+    height:650px;
+    position: relative;
+    
+}
+
+.heading{
+    color: rgb(43, 41, 41);
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 5%;
+    font-weight: lighter;
+}
+
+
+.boxes_flex{
+    position: absolute;
+    top:25%;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.whole{
+    width:17%;
+}
+
+.box{
+    background-color: rgb(255, 215, 70);
+    width: 70%;
+    height: 10vw;
+    border: 1px solid black;
+
+}
+
+.box .h1{
+    font-size:4vw;
+    text-align: center;
+    color: white;
+
+}
+
+.whole h1{
+    font-size:35px;
+    font-weight: lighter;
+    color: rgb(43, 42, 42);
+}
+
+.whole h2{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    color: rgb(122, 118, 118);
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+.whole .button{
+    border:1px solid black;
+    border-radius: 2px;
+    width:80%;
+    margin: auto;
+    margin-top:40px;
+    padding: 5% 0;
+}
+
+#start_button{
+    margin-left: 22%;
+    font-size: 2vw;
+    font-weight: lighter;
+    color: rgb(43, 42, 42);
+    text-decoration: none;
+
+}
+
+@media only screen and (min-width:768px)  and (max-width:1024px){
+
+    .how_it_works{
+        height:600px;
+    }
+
+    .whole h1{
+        font-size: 3vw;
+    }
+
+    .whole h2{
+        font-size: 14px;
+    }
+     
+
+}
+
+@media only screen and (max-width:767px) {
+
+
+    .how_it_works{
+        margin-top: 100px;
+        height: 1280px;
+    }
+
+    .heading{
+        margin-top: 10px;
+    }
+
+    .boxes_flex {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        top:10%;
+    }
+
+    .box{
+        width:60%;
+        height:40vw;
+        margin: auto;
+        
+    }
+
+    .box .h1{
+        font-size: 20vw;
+        width:100%;
+        position: relative;
+        bottom:12%;
+        
+    }
+
+    .whole{
+        width:70%;
+        padding-bottom: 8%;
+    }
+
+    .whole h1{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .whole h2{
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .whole .button{
+        margin-top: 20px;
+        width:50%;
+    }
+
+    .button a{
+        font-size: 5vw;
+    }
+
+}
+
+
+
+/* how it works end */
+
+
+/* why good stax start */
+
+.why_good_stax{
+    margin-top: 30px;
+}
+
+.flex3{
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex3 .box_3{
+    width:13%;
+    
+    
+}
+
+.box_3 img{
+    width:80%;
+}
+
+.box_3 h2{
+    font-size: 2vw;
+    font-weight: lighter;
+    color: rgb(54, 52, 52);
+}
+
+.box_3 h4{
+    font-size: 17px;
+    font-weight: lighter;
+    color:rgb(148, 148, 148);
+    word-spacing: 2px;
+    line-height: 1.3;
+}
+
+
+.why_good_stax .button{
+    border:1px solid black;
+    border-radius: 2px;
+    width:15%;
+    height: 6vw;
+    margin:0 auto;
+    margin-top:5%;
+}
+
+.button #join_text{
+    margin: 0;
+    padding-top: 13%;
+    font-size: 1.9vw;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+
+@media only screen and (min-width:768px)  and (max-width:1024px){
+
+    .flex3 .box_3{
+        width:15%;
+    }
+
+    .box_3 h2{
+        font-size: 2.5vw;
+    }
+    
+    .box_3 h4{
+        font-size: 14px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .box_3 h4{
+        font-size: 14px;
+    }
+
+    .flex3{
+        justify-content: space-evenly;
+    }
+
+    .flex3 .box_3{
+        width:42%;
+        margin:0;
+    }
+
+    .flex3{
+        height:610px;
+    }
+
+    .box_3 h2{
+        font-size: 19px;
+    }
+
+    #love{
+        display: none;
+    }
+
+    .why_good_stax .button{
+        width:30%;
+        height:12.5vw;
+    }
+
+    .button #join_text{
+        font-size: 4.5vw;
+        padding-top:13%;
+    }
+}
+
+/* why good stax end */
+
+
+
+/* mailing start */
+
+.mail_list{
+    margin-top: 80px;
+    background-color: rgb(65, 63, 63);
+}
+
+.mail_list .text{
+    padding-top: 3%;
+    margin: auto;
+    width:29%;
+}
+
+.mail_list h1 {
+    color: white;
+    font-size: 2vw;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.mail_list h3 {
+    color: white;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.mail_list .email{
+    display: flex;
+    justify-content: center;
+}
+
+.email .box_4 {
+    width:20%;
+    height: 3vw;
+    background-color: white;
+}
+
+.email #button {
+    width: 8%;
+    background-color: rgb(255, 213, 0);
+}
+
+
+.box_4 h2{
+    font-size: 1.3vw;
+    position: relative;
+    left:10%;
+    bottom:10%;
+    color: grey;
+    font-weight: lighter;
+
+}
+#button a{
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+    margin: auto;
+    font-size: 1.3vw;
+    position: relative;
+    left:8%;
+    top:25%;
+}
+
+.mail_list .copyright{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.mail_list h4{
+    margin: 0%;
+    font-size: 14px;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 1%;
+}
+
+@media only screen and (min-width:768px)  and (max-width:1024px){
+
+    .mail_list h1{
+        font-size: 25px;
+    }
+     
+    .mail_list h3{
+        font-size: 13px;
+    }
+
+    .mail_list h4{
+        font-size: 12px;
+    }
+
+    .mail_list .email{
+        margin-top: 3%;
+    }
+
+    .email .box_4{
+        width:25%;
+        height:4vw;
+        margin-bottom: 5%;
+    }
+
+    .email #button {
+        width: 10%;
+        background-color: rgb(255, 213, 0);
+    }
+
+
+    .box_4 h2{
+        position: relative;
+        font-size: 1.5vw;
+        top:28%;
+        margin: 0;
+        display: inline;
+    }
+
+    #button a{
+        font-size: 1.5vw;
+        left:12%;
+    }
+
+    .mail_list .copyright{
+        margin-top: 2%;
+    }
+}
+
+
+@media only screen and (max-width:767px) {
+
+    .mail_list .text{
+        width:60%;
+    }
+
+    .mail_list h1{
+        font-size: 25px;
+    }
+
+    .mail_list h3{
+        font-size: 15px;
+    }
+
+    .mail_list h4{
+        font-size: 11px;
+    }
+
+    .mail_list .email{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+        margin-bottom: 8%;
+    }
+
+    .email .box_4{
+        width:65%;
+        height:10vw;
+        margin-bottom: 5%;
+    }
+
+    .email #button {
+        width: 30%;
+        background-color: rgb(255, 213, 0);
+    }
+
+
+    .box_4 h2{
+        position: relative;
+        font-size: 4vw;
+        top:25%;
+        margin: 0;
+        display: inline;
+    }
+
+    #button a{
+        font-size: 4vw;
+        left:15%;
+    }
+
+    #start_button {
+        font-size: 5vw;
+    }
+ 
+}
+
+
+
+
+/* mailing end */
+
+
